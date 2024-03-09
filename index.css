@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @media only screen and (max-width: 720px) {
     .nav-links {}
 }
@@ -6,7 +12,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90vw;
+    width: 85vw;
     margin: 0 auto;
 }
 
@@ -78,21 +84,13 @@ h3 {
 }
 
 footer {
-    position: absolute;
     background: #111;
     height: auto;
-    width: 100vw;
+    width: 100%;
     font-family: "Open Sans";
     padding-bottom: 0px;
     color: #fff;
-}
-
-.footer-content {
-    display: flex;
-    align-items: left;
-    justify-content: left;
-    flex-direction: column;
-    text-align: left;
+    margin-top: 50px;
 }
 
 .footer-content h3 {
@@ -100,14 +98,6 @@ footer {
     font-weight: 400;
     text-transform: capitalize;
     line-height: 3rem;
-}
-
-.footer-content p {
-    max-width: 500px;
-    margin: 5px auto;
-    line-height: 28px;
-    font-size: 14px;
-    text-align: left;
 }
 
 .Follow-Us {
@@ -120,6 +110,7 @@ footer {
 
 .Follow-Us li {
     margin: 0px;
+    list-style-type: none;
 }
 
 .Follow-Us a {
@@ -136,11 +127,16 @@ footer {
     color: #60137bf6;
 }
 
+.footer-content p {
+    text-align: center;
+    padding: 20px 0;
+}
+
 .footer-bottom {
     background: black;
-    width: 100vw;
     padding: 5px 50px;
     text-align: center;
+    margin: 20px 0 0 0;
 }
 
 .footer-bottom p {
@@ -151,7 +147,6 @@ footer {
 
 .footer-bottom span {
     text-decoration: uppercase;
-    opacity: .4;
     font-weight: 200px;
 }
 
@@ -159,7 +154,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90vw;
+    width: 85vw;
     margin: 0 auto;
     margin-top: 50px;
 }
@@ -208,33 +203,44 @@ footer {
     margin-top: 10px;
 }
 
-
-/* 
-
-.container1 {
-    width: 500px;
-    margin: 60px;
-    padding: 100px;
-    border: 0.1px solid #ccc;
-    border-radius: 1px;
-    border-top: 2px;
-    border-bottom: 2px;
+.section-two {
+    display: flex;
+    flex-direction: column;
+    width: 85vw;
+    margin: 100px auto;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.container1 h2 {
-    text-align: justify;
-    color: rgba(46, 14, 89, 0.865);
-    font-size: 29px;
+.hidden {
+    display: none;
 }
 
-.container1 h3 {
-    right: 80px;
+.sub-two .contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sub-two span {
+    color: rgba(77, 42, 122, 0.85);
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 20px;
 }
 
 .form-group {
     margin-bottom: 0px;
-    width: 100px;
-    padding: 20px;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 label {
@@ -243,17 +249,9 @@ label {
     font-size: 15px;
 }
 
-.container1 h4 {
-    font-size: 18px;
-}
-
-.container1 p {
-    font-size: 18px;
-}
-
 input[type="text"],
 textarea {
-    width: 200px;
+    width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -261,8 +259,6 @@ textarea {
 
 button {
     padding: 10px 15px;
-    margin-left: 17px;
-    margin-top: -15px;
     background-color: rgba(77, 42, 122, 0.85);
     color: #fff;
     border: none;
@@ -274,41 +270,8 @@ button:hover {
     background-color: #643d7dbe;
 }
 
-.hidden {
-    display: none;
-}
-
-.contact-us {
-    margin-bottom: 150px;
-    margin-top: 150px;
-    background-color: rgba(42, 3, 78, 0.909);
-    background-size: 200px;
-    padding-bottom: 100px;
-    padding-top: 100px;
-    opacity: 0.6;
-}
-
-.container1 h3 {
-    color: #111;
-}
-
-.container1 h2 {
-    font-size: 22px;
-    text-align: left;
-    padding-top: -20px;
-}
-
-.container2 {
-    display: flex;
-    align-items: center;
-    padding-top: 150px;
-}
-
 .address {
     font-size: 20px;
-    float: left;
-    padding-left: 120px;
-    margin-top: 180px;
     color: rgb(90, 22, 119);
     text-align: justify;
     font-size: 16px;
@@ -320,9 +283,15 @@ button:hover {
     text-decoration: underline;
 }
 
+.section-three {
+    width: 85vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 iframe {
-    width: 700px;
+    width: 100%;
     height: 500px;
-    float: right;
-    padding-left: 250px;
-} */
+}
