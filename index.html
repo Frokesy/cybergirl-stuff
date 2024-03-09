@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Hot Beans Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="index.css" />
 </head>
 
@@ -25,126 +26,69 @@
         </div>
     </nav>
 
-    <div class="text">
-        <button class="button"> APPLY HERE</button>
-
-        <h2>PLEASE COMPLETE AND SUBMIT THE APPLICATION FORM.</h2>
+    <div class="section-one">
+        <div class="container">
+            <!-- <img src="assets/careers1.jpg" class="careers-img2"> -->
+            <h1><span style="color: rgba(46, 14, 89, 0.865);">WELCOME TO HOT BEANS</span> </h1>
+            <p>Welcome to Hot Beans, your premier partner for cutting-edge website development solutions.
+                <br>At Hot Beans, we specialise in crafting bespoke digital experiences tailored to your unique <br>needs and vision. Our team of skilled developers, designers, and strategists <br>work collaboratively to bring your ideas to life, creating
+                dynamic and user-friendly websites<br> that leave a lasting impression. <br> <br>Whether you're a small business looking to establish your online presence or a large corporation<br> seeking to revamp your digital platform, Hot Beans is
+                dedicated to delivering <br>results that exceed expectations. <br>Elevate your online presence with Hot Beans and stand out in the digital landscape.
+            </p>
+            <button class="button" onclick="document.location='About Hot Beans.html'">MORE ABOUT US </button>
+        </div>
+        <img src="assets/hero_img_one.webp" class="careers-img">
     </div>
-
-    <div class="container">
+    <div class="container1">
         <form action="#">
-            <div class="row">
-                <div class="col-25">
-                    <label for="fname">First Name:</label>
+            <h2>GET IN TOUCH</h2>
+            <form id="messageForm">
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
                 </div>
-                <div class="col-75">
-                    <input type="text" id="fname" name="firstname" placeholder="Enter Your First Name..">
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="lname">Last Name:</label>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
                 </div>
-                <div class="col-75">
-                    <input type="text" id="lname" name="lastname" placeholder="Last Name..">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="DOB">Date Of Birth:</label>
-                </div>
-                <div class="col-75">
-                    <input type="text" id="DOB" name="DOB" placeholder="DOB">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-25">
-                    <label for="DOB">Email Address:</label>
-                </div>
-                <div class="col-75">
-                    <input type="text" id="DOB" name="Email" placeholder="Email Address..">
-                </div>
-            </div>
-
-
-
-            <div class="row">
-                <div class="col-25">
-                    <label for="position">Position Applying for:</label>
-                </div>
-                <div class="col-75">
-                    <input type="text" id="lname" name="lastname" placeholder="">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-25">
-                    <label for="contry">Employment Status:</label>
-                </div>
-                <div class="col-25">
-                    <select id="employment" name="employmnet" required>
-                        <option value="" disabled selected>select</option>
-                        <option value="employed">Employed</option>
-                        <option value="unemployed">Unemployed</option>
-                        <option value="student "> Student</option>
-
-                          </select>
-                </div>
-            </div>
-
-
-            <div class="row">
-                <div class="col-25">
-                    <label for="contry">Country Of Residence:</label>
-                </div>
-                <div class="col-25">
-                    <select id="country" name="country" required>
-                    <option value="" disabled selected>select country of residence</option>
-                    <option value="Afghanistan">Afghanistan</option>
-                    <option value="Albania">Albania</option>
-                    <option value="United Kingdom">United Kingdom</option>
-
-                  </select>
-                </div>
-            </div>
-
-
-
-            <div class="row">
-                <div class="col-25">
-                    <label for="subject">Why Are You Interested In this Position:</label>
-                </div>
-                <div class="col-25">
-                    <textarea id="subject" name="subject"></textarea>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-25">
-                    <label for="subject">Cover Letter:</label>
-                </div>
-                <div class="col-75">
-                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-25">
-                    <label for="CV upload">Upload CV</label>
-                </div>
-                <div class="col-75">
-                    <input type="file" id="myFile" name="filename"></div>
-                <input type="submit">
-            </div>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="thankYouMessage" class="hidden">Thank you! We will be in touch soon.</div>
+            <h4>Send us a message and one of our team will be in touch with you shortly</h4>
+            <h2>OR</h2>
+            <br>
+            <h3>CONTACT US</h3>
+            <p><b> Email:helpline@hotbeans.co.uk <br> Fax: 0849694688<br> Recruitment Team: recruitment@hotbeans.co.uk</b></p>
+            </p>
+        </form>
     </div>
 
 
-    </form>
 
+
+
+
+
+
+    <div class="container2">
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.
+    711663679636!2d0.17508837587459988!3d51.48180667180746!2m3!1f0!2f0!3f0!3m2!1i1024!2
+    i768!4f13.1!3m3!1m2!1s0x47d8afd046cde0f7%3A0xd723659886b099e5!2sWalnut%20Tree%20Rd%2C%20Erith!
+    5e0!3m2!1sen!2suk!4v1708903063733!5m2!1sen!2suk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <div class="address">
+                <h2> ADDRESS</h2>
+                <P><b>2 Walnut Tree Road <br> Erith.<br> DA8 1RA</b></P>
+            </div>
+        </div>
     </div>
 
-    <button class="button1" onclick="document.location='careers.html'">Back to careers page</button>
 
 
 
