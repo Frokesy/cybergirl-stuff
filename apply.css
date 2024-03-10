@@ -6,7 +6,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90vw;
+    width: 85vw;
     margin: 0 auto;
 }
 
@@ -33,21 +33,11 @@ a:hover {
     transform: scale(1.1);
 }
 
-.text h2 {
+.text {
     margin-top: 50px;
     color: #320b45d0;
     font-size: 20px;
     text-align: center;
-}
-
-.button {
-    margin-left: 550px;
-    background-color: #d4d2f0e6;
-    font-size: 20px;
-    border-radius: 15px;
-    color: rgb(15, 14, 14);
-    padding-bottom: 15px;
-    padding-top: 15px;
 }
 
 .button1 {
@@ -69,9 +59,26 @@ textarea {
     resize: vertical;
 }
 
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
 label {
+    font-size: 15px;
     padding: 12px 12px 12px 0;
     display: inline-block;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 input[type=submit] {
@@ -94,24 +101,9 @@ input[type=submit]:hover {
     background-color: #d4d2f0e6;
     padding: 20px;
     margin-top: 20px;
-}
-
-.col-25 {
-    float: left;
-    width: 20%;
-    margin-top: 6px;
-}
-
-.col-75 {
-    float: left;
-    width: 35%;
-    margin-top: 6px;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
 }
 
 input[type=file] {
@@ -121,36 +113,19 @@ input[type=file] {
 }
 
 footer {
-    position: absolute;
     background: #111;
     height: auto;
-    width: 100vw;
+    width: 100%;
     font-family: "Open Sans";
     padding-bottom: 0px;
     color: #fff;
-}
-
-.footer-content {
-    display: flex;
-    align-items: left;
-    justify-content: left;
-    flex-direction: column;
-    text-align: left;
+    margin-top: 50px;
 }
 
 .footer-content h3 {
-    font: size 1.8rem;
     font-weight: 400;
     text-transform: capitalize;
     line-height: 3rem;
-}
-
-.footer-content p {
-    max-width: 500px;
-    margin: 5px auto;
-    line-height: 28px;
-    font-size: 14px;
-    text-align: left;
 }
 
 .Follow-Us {
@@ -163,6 +138,7 @@ footer {
 
 .Follow-Us li {
     margin: 0px;
+    list-style-type: none;
 }
 
 .Follow-Us a {
@@ -179,11 +155,16 @@ footer {
     color: #60137bf6;
 }
 
+.footer-content p {
+    text-align: center;
+    padding: 20px 0;
+}
+
 .footer-bottom {
     background: black;
-    width: 100vw;
     padding: 5px 50px;
     text-align: center;
+    margin: 20px 0 0 0;
 }
 
 .footer-bottom p {
@@ -194,6 +175,59 @@ footer {
 
 .footer-bottom span {
     text-decoration: uppercase;
-    opacity: .4;
     font-weight: 200px;
+}
+
+.hidden {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+.cancel {
+    display: none;
+}
+
+@media screen and (max-width: 1020px) {
+    nav {
+        width: 90vw;
+        margin: 0 auto;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .nav-links {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        z-index: 1000;
+    }
+    .nav-links.open {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-links.open :not(.cancel) {
+        align-items: center;
+        justify-content: center;
+    }
+    .cancel {
+        cursor: pointer;
+        padding: 40px 40px 40px 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .nav-links a {
+        margin: 20px 0;
+    }
+    .container {
+        width: 90vw;
+        margin: 0 auto;
+    }
 }
