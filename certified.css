@@ -35,53 +35,25 @@ a:hover {
     transform: scale(1.1);
 }
 
-.section-one {
+.cancel {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 85vw;
     margin: 0 auto;
-    margin-top: 50px;
-}
-
-.section-one .container {
-    width: 55%;
-}
-
-.container h1 {
-    color: rgba(59, 59, 59, 0.941);
-    opacity: 0.9;
-    text-align: justify;
-    padding-bottom: 20px;
-    font-size: 30px;
-}
-
-.container p {
-    color: rgba(36, 34, 34, 0.877);
-    opacity: 0.9;
-    font-size: 17px;
-}
-
-.button,
-.button1 {
-    background-color: rgba(77, 42, 122, 0.85);
-    color: #fff;
-    border: none;
-    padding: 15px 20px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 900;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-.section-one img {
-    width: 40%;
-    height: 450px;
 }
 
 h1 {
     text-align: center;
+    color: #583867;
 }
 
 h2 {
@@ -92,6 +64,41 @@ h2 {
 
 h3 {
     color: rgb(84, 9, 107);
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 85vw;
+    margin: 0 auto;
+    margin-top: 15vh;
+    gap: 50px;
+}
+
+.column {
+    font-size: 14px;
+    color: rgba(18, 18, 19, 0.815);
+    background-color: rgb(245, 245, 245);
+    border-radius: 20px;
+    border-style: groove;
+    border-color: #f3ecf6af;
+    padding: 10px 20px 20px 20px;
+}
+
+.column h3 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.button {
+    background-color: rgba(178, 149, 206, 0.74);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.button:hover {
+    background-color: rgb(216, 210, 220);
 }
 
 footer {
@@ -160,68 +167,6 @@ footer {
     font-weight: 200px;
 }
 
-.section-one {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 85vw;
-    margin: 0 auto;
-    margin-top: 50px;
-}
-
-.button:hover,
-.button1:hover {
-    background-color: #643d7dbe;
-}
-
-.job-header {
-    text-align: center;
-    font-size: 34px;
-    color: #f6f5f7fe;
-    text-decoration: underli;
-    background-color: rgba(41, 10, 79, 0.959);
-    margin-top: 15vh;
-    padding: 20px;
-}
-
-.job-openings {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 100px;
-    width: 85vw;
-    margin: 0 auto;
-}
-
-.job-openings p {
-    font-size: 17px;
-    margin-top: 20px;
-}
-
-.job h3 {
-    font-size: 23px;
-    text-decoration: underline;
-    color: #320942d1;
-    margin-top: 20px;
-}
-
-.job li {
-    font-size: 15px;
-    margin-top: 10px;
-}
-
-hr {
-    height: 3px;
-    background-color: rgba(22, 3, 41, 0.715);
-}
-
-.hamburger {
-    display: none;
-}
-
-.cancel {
-    display: none;
-}
-
 @media screen and (max-width: 1020px) {
     nav {
         width: 90vw;
@@ -258,37 +203,41 @@ hr {
     .nav-links a {
         margin: 20px 0;
     }
-    .section-one {
+    .container {
         display: flex;
         flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         margin-top: 50px;
-    }
-    .section-one .container {
         width: 90vw;
     }
-    .section-one img {
+    .container img {
         width: 100%;
         height: auto;
         margin-top: 50px;
     }
-    .job-openings {
+    .courses {
         display: grid;
         grid-template-columns: 1fr;
-        column-gap: 100px;
         width: 90vw;
         margin: 0 auto;
+        margin-top: 10vh;
     }
-    .button,
-    .button1 {
-        background-color: rgba(77, 42, 122, 0.85);
-        color: #fff;
-        border: none;
-        padding: 15px 20px;
-        cursor: pointer;
+    .column {
+        padding: 30px;
+    }
+    .column h3 {
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .button {
+        background-color: rgba(178, 149, 206, 0.74);
+        padding: 10px 20px;
+        border-radius: 20px;
         font-size: 20px;
-        font-weight: 900;
-        border-radius: 5px;
-        margin-top: 50px;
+    }
+    .button:hover {
+        background-color: rgb(216, 210, 220);
     }
 }

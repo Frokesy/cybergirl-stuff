@@ -35,25 +35,6 @@ a:hover {
     transform: scale(1.1);
 }
 
-.text-box {
-    text-align: center;
-    width: 100%;
-    color: rgba(29, 5, 77, 0.906);
-    font-size: xxx-large;
-    font-family: Bree Serif serif;
-    margin-top: 85px;
-    text-decoration-thickness: 5px;
-    opacity: 0.7;
-}
-
-.text-box p {
-    text-decoration: none;
-    color: rgba(82, 12, 114, 0.774);
-    opacity: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: -250px;
-}
-
 h1 {
     text-align: center;
     font-size: xxxx-large;
